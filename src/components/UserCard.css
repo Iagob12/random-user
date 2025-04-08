@@ -1,3 +1,4 @@
+/* Estilo principal do cartão de usuário */
 .usuario-card {
     display: flex;
     flex-direction: column;
@@ -9,21 +10,25 @@
     transition: transform 0.3s ease;
 }
 
+/* Efeito ao passar o mouse no cartão */
 .usuario-card:hover {
     transform: scale(1.05);
 }
 
+/* Estilo da imagem do usuário */
 .usuario-card img {
     border-radius: 50%;
     margin-bottom: 8px;
 }
 
+/* Estilo do nome do usuário */
 .usuario-card h3 {
     font-size: 18px;
     color: #333;
     margin: 8px 0;
 }
 
+/* Estilo das informações adicionais */
 .usuario-card p {
     font-size: 14px;
     color: #555;
