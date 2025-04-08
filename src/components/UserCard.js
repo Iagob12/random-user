@@ -1,15 +1,15 @@
 import React from 'react';
-import './UserCard.css'; // Estilos para o card
+import './UserCard.css';
 
-const UserCard = ({ user }) => {
+const UsuarioCard = ({ usuario }) => {
     return (
-        <div className="user-card">
-            <img src={user.picture.large} alt={`${user.name.first} ${user.name.last}`} />
-            <h3>{`${user.name.first} ${user.name.last}`}</h3>
-            <p>Email: {user.email}</p>
-            <p>Location: {`${user.location.city}, ${user.location.country}`}</p>
+        <div className="usuario-card">
+            <img src={usuario.picture.large} alt={`${usuario.name.first} ${usuario.name.last}`} />
+            <h3>{`${usuario.name.first} ${usuario.name.last}`}</h3>
+            <p>Email: {usuario.email}</p>
+            <p>Location: {`${usuario.location.city}, ${usuario.location.country}`}</p>
         </div>
     );
 };
 
-export default UserCard;
+export default UsuarioCard;

@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Aplicação de Consumo de API com React.js e Axios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
+Este projeto é uma aplicação front-end desenvolvida em React.js que consome a API pública [Random User API](https://randomuser.me/api/). O objetivo é exibir uma lista de usuários com informações básicas, incluindo uma imagem, de forma estilizada e organizada.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Funcionalidades
+- Exibe uma lista de usuários com:
+  - Foto de perfil.
+  - Nome completo.
+  - Email.
+  - Localização (cidade e país).
+- Mensagem de carregamento enquanto os dados são buscados.
+- Tratamento de erros com opção de tentar novamente.
+- Layout responsivo e estilizado.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas
+- React.js
+- Axios
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Como Rodar o Projeto
+1. Clone o repositório:
+git clone <link-do-repositorio>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Acesse a pasta do projeto:
+cd <user-random>
 
-### `npm run build`
+3. Instale as dependências:
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Inicie o servidor de desenvolvimento:
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ ---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ ## API Utilizada
+ A API utilizada foi a Random User API. Ela fornece dados fictícios de usuários, como nome, email, localização e foto de perfil.
 
-### `npm run eject`
+ - Exemplo de Resposta da API:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+{
+  "results": [
+    {
+      "name": {
+        "first": "João",
+        "last": "Silva"
+      },
+      "email": "joao.silva@example.com",
+      "location": {
+        "city": "São Paulo",
+        "country": "Brasil"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/1.jpg"
+      },
+      "login": {
+        "uuid": "12345-abcde"
+      }
+    }
+  ]
+}
